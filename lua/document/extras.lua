@@ -1,0 +1,22 @@
+--   Installed
+--    ◍ bash-language-server
+--    ◍ codelldb
+--    ◍ docker-compose-language-service
+--    ◍ dockerfile-language-server
+--    ◍ hadolint
+--    ◍ helm-ls
+--    ◍ intelephense
+--    ◍ lua-language-server
+--    ◍ php-cs-fixer
+--    ◍ php-debug-adapter
+--    ◍ phpcs
+--    ◍ phpstan
+--    ◍ pyright
+--    ◍ ruff
+--    ◍ shellcheck
+--    ◍ shfmt
+--    ◍ sqlfluff
+--    ◍ stylua
+--    ◍ vtsls
+--    ◍ vue-language-server
+--    ◍ yaml-language-server

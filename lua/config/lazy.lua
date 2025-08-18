@@ -1,3 +1,5 @@
+-- ~/.config/nvim/lua/config/lazy.lua
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -22,6 +24,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   extras = {
+    -- 明确在这里启用 extras, 注意plugins里的插件应该在这里启用
     -- 启用对 PHP 语言的增强支持 (LSP, linter, formatter)
     "lazyvim.plugins.extras.lang.php",
     -- 启用对 Python 语言的增强支持 (LSP, linter, formatter)
