@@ -25,6 +25,8 @@ map("n", "<C-Left>", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
 -- 使用 <leader>q 关闭当前缓冲区，比默认的 <leader>bd 更快。
 map("n", "<leader>q", "<cmd>bdelete<CR>", { desc = "Close Buffer" })
 
+-- Telescope Project
+map("n", "<leader>fp", "<cmd>Telescope projects<cr>", { desc = "Switch Project" })
 -- ===================================================================
 -- 终端 (Terminal)
 -- ===================================================================
