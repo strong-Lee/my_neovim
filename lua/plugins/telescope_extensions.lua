@@ -12,6 +12,7 @@ return {
     end,
   },
   {
+    -- 统一 Neovim 的 UI
     -- 将 Neovim 默认的、丑陋的命令行选择菜单替换为漂亮的 Telescope 界面。
     "nvim-telescope/telescope-ui-select.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },

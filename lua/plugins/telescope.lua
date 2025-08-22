@@ -1,4 +1,5 @@
 -- ~/.config/nvim/lua/plugins/telescope.lua
+-- 使用 fd 作为文件查找器
 
 return {
   "nvim-telescope/telescope.nvim",

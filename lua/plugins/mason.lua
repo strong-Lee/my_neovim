@@ -12,14 +12,16 @@ return {
         "php-cs-fixer", -- PHP 的代码格式化器
         "phpstan", -- 建议添加：静态分析
         -- "psalm", -- 建议添加：类型检查, php版本大于8.1
-        "php-debug-adapter", -- 调试支持
+        -- "php-debug-adapter", -- 调试支持
         -- "blade-formatter", -- Laravel Blade 支持
+
         -- Lua语言
-        "lua-language-server",
-        "stylua",
+        -- "lua-language-server",
+        -- "stylua",
+
         -- Python语言
-        "pyright",
-        "black",
+        -- "pyright",
+        -- "black",
       })
     end,
   },

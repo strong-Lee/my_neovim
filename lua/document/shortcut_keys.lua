@@ -17,3 +17,7 @@
 --
 -- 全局搜索
 -- 空格 + s + g 在整个项目中搜索文本
+--
+-- 调试错误
+-- 当查看log是找不到解决问题的时候可以看nvim的启动顺序
+-- nvim --startuptime startup.log /Users/Cay/www/beixiaota/api/components/Encryption.php

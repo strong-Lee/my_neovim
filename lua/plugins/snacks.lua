@@ -1,4 +1,5 @@
 -- ~/.config/nvim/lua/plugins/snacks.lua
+--  LazyVim 作者开发的用于美化和增强 Neovim UI 的小工具集合
 
 return {
   -- 找到 LazyVim 默认加载的 snacks.nvim 插件

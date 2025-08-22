@@ -26,9 +26,10 @@ require("lazy").setup({
   extras = {
     -- 明确在这里启用 extras, 注意plugins里的插件应该在这里启用
     -- 启用对 PHP 语言的增强支持 (LSP, linter, formatter)
-    "lazyvim.plugins.extras.lang.php",
+    -- PHP代码开发推荐工作流：intelephense + php-cs-fixer + phpstan
+    -- "lazyvim.plugins.extras.lang.php", -- 禁用全家桶，需要单独配置，不然会有冲突
     -- 启用对 Python 语言的增强支持 (LSP, linter, formatter)
-    "lazyvim.plugins.extras.lang.python",
+    -- "lazyvim.plugins.extras.lang.python", -- 禁用全家桶，需要单独配置，不然会有冲突
     -- 启用对 C/C++ 语言的增强支持
     -- "lazyvim.plugins.extras.lang.clang", -- 如果你需要C/C++，取消此行注释
     -- 启用官方的代码片段 (snippets) 功能包
