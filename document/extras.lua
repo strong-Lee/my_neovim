@@ -1,3 +1,4 @@
+--
 --   Installed
 --    ◍ bash-language-server
 --    ◍ codelldb
