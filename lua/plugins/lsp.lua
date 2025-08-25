@@ -32,17 +32,17 @@ return {
             },
             -- (可选) 如果你希望 intelephense 知道你的 Yii2 全局变量和类，可以这样做
             -- 这需要你生成一个索引文件，对于大型框架项目很有帮助
-            stubs = {
-              "core",
-              "standard",
-              "pcre",
-              "json",
-              "gd", -- 如果你用到了GD库
-              "mbstring", -- 多字节字符串
-              -- 你项目用到的其他PHP扩展...
-              "yii2", -- 需要确保 'bmewburn.vscode-intelephense-client' 插件知道这个 stub
-              -- 其他 stub...
-            },
+            --stubs = {
+            --  "core",
+            --  "standard",
+            --  "pcre",
+            --  "json",
+            --  "gd", -- 如果你用到了GD库
+            --  "mbstring", -- 多字节字符串
+            --  -- 你项目用到的其他PHP扩展...
+            --  "yii2", -- 需要确保 'bmewburn.vscode-intelephense-client' 插件知道这个 stub
+            --  -- 其他 stub...
+            --},
             -- 如果你还想禁用其他类型的警告，可以在这里添加
             -- environment = {
             --   phpVersion = "8.2", -- 告诉 intelephense 你的 PHP 版本
