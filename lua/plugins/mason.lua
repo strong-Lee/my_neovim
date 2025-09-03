@@ -15,6 +15,9 @@ return {
         -- "php-debug-adapter", -- 调试支持
         -- "blade-formatter", -- Laravel Blade 支持
 
+        -- 前端 / Vue
+        "vue-language-server",
+
         -- Lua语言
         -- "lua-language-server",
         -- "stylua",
