@@ -25,6 +25,9 @@ return {
         -- Python语言
         -- "pyright",
         -- "black",
+
+        -- Shell脚本支持
+        "bash-language-server",
       })
     end,
   },
