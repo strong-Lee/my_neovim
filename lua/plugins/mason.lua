@@ -1,12 +1,13 @@
 -- ~/.config/nvim/lua/plugins/mason.lua
+-- 这个文件现在是所有 Mason 相关配置的唯一来源，更加清晰。
 
 return {
+  -- 第一个插件：配置核心的 mason.nvim
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
-      -- 添加安全初始化
-      opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, {
+      -- `ensure_installed` 列表告诉 Mason 应该自动安装哪些工具
+      vim.list_extend(opts.ensure_installed or {}, {
         -- PHP语言
         "intelephense", -- PHP 的 LSP 服务器
         "php-cs-fixer", -- PHP 的代码格式化器
@@ -30,5 +31,14 @@ return {
         "bash-language-server",
       })
     end,
+  },
+
+  -- 第二个插件：禁用 mason-lspconfig.nvim
+  -- 我们把它放在这里，因为它的配置与 mason.nvim 密切相关
+  {
+    "mason-org/mason-lspconfig.nvim",
+    -- enabled = false 是 Lazy.nvim 的一个特殊属性，
+    -- 用来明确地禁用一个插件，即使其他地方可能把它作为依赖。
+    enabled = false,
   },
 }
