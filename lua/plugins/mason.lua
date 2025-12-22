@@ -80,11 +80,11 @@ return {
       },
       -- 3. (可选) 如果你的 phpcs 配置文件不在项目根目录，可以在这里指定
       --    但通常 nvim-lint 会自动找到它。为保险起见，我们可以加上。
-      linters = {
-        phpcs = {
-          args = { "--standard=" .. vim.fn.getcwd() .. "/.phpcs.xml" },
-        },
-      },
+      -- linters = {
+      --   phpcs = {
+      --     args = { "--standard=" .. vim.fn.getcwd() .. "/.phpcs.xml" },
+      --   },
+      -- },
     },
   },
 
@@ -123,7 +123,7 @@ return {
       formatters = {
         ["php_cs_fixer"] = {
           -- command = "./vendor/bin/php-cs-fixer",
-          command = vim.fn.getcwd() .. "/vendor/bin/php-cs-fixer",
+          -- command = vim.fn.getcwd() .. "/vendor/bin/php-cs-fixer",
           args = {
             "fix",
             "$FILENAME",
