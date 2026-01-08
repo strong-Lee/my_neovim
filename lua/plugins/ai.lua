@@ -126,11 +126,28 @@ return {
     -- 窗口外观设置
     windows = {
       position = "right", -- 侧边栏位置
-      width = 30, -- 宽度百分比
+      width = 34, -- 宽度百分比
       sidebar_header = {
         align = "center",
         rounded = true,
       },
+      input = {
+        prefix = "> ",
+        height = 8, -- 输入框高度
+      },
+      edit = {
+        border = "rounded",
+        start_insert = true, -- 打开编辑框直接进入输入模式
+      },
+      ask = {
+        floating = false, -- 设为 false 让其平铺，看起来更整洁；设为 true 是浮动窗口
+        -- start_insert = true,
+        border = "rounded",
+      },
+    },
+    --- @class AvanteRepoMapConfig
+    repo_map = {
+      ignore_patterns = { "%.git", "%.worktree", "__pycache__", "node_modules" }, -- 忽略某些文件让界面更干净
     },
   },
 }
